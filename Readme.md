@@ -84,3 +84,5 @@ docker attach <containerid>
 <br>
 
 Now you are back in your container and  can  start your testing  inside container.Where you exited the container,you will find it in the same stage.With all files intact.You can do a git fetch and can test your changes related to jenkins playbook again.<br>
+
+
