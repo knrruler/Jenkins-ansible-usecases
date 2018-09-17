@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh 'ansible-playbook artifactory-playbook/requirements.yml'
                 sh 'ansible-playbook -i artifactory-playbook/inventory artifactory-playbook/playbook.yml'
             }
         }
