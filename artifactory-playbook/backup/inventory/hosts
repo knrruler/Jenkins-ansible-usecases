@@ -1,0 +1,4 @@
+[artifactory]
+54.90.244.181 ansible_connection=ssh ansible_user=user ansible_ssh_pass=infodrive ansible_become_user=root ansible_become_pass=infodrive
+
+34.227.93.169 ansible_connection=ssh ansible_user=user ansible_ssh_pass=infodrive ansible_become_user=root ansible_become_pass=infodrive 

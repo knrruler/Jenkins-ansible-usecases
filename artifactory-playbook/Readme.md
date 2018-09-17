@@ -1,29 +1,47 @@
-#Ansible Playbook -Artifactory
+bbaassssiiee.artifactory
+=========
 
+Install Artifactory, the Maven repository manager by JFrog.
 
-This playbook installs artifactory  at /opt location .
+Requirements
+------------
 
+This role was built for RedHat systems like RHEL 6, Centos 6. It needs Java, and PostgreSQL or MySQL.
 
-###Playbook variables
+Role Variables
+--------------
+artifactory_database can hold either 'mysql' or 'postgresql', you should provide the database yourself now,
+it is no longer a transitive dependency.
 
-We have defined below mentioned variables for our playbook.
+artifactory_password is defined in defaults/main/yml, override it in group_vars.
 
+artifactory_version is defined in vars/main.yml
+Set JAVA_OPTIONS in templates/etc-opt-jfrog-artifactory-default.j2
 
-```
-artifactory_version: artifactory-oss-4.4.1
-artifactory_dir: /opt/{{ artifactory_version }}
-artifactory_zip_file: artifactory-oss-4.4.1.zip
-artifactory_zip_url: http://dl.bintray.com/content/jfrog/artifactory/jfrog-"{{ artifactory_zip_file }}"
+Dependencies
+------------
 
-```
+Artifactory needs Java and either PostgreSQL or MySQL. I tested this role with Java by geerlingguy and MariaDB by pcextreme.
 
-####Current Required functionalities.
-- Use of database  for  artifactory
-- Allow repository creation and configuration.
+ansible-galaxy install -p roles pcextreme.mariadb
+ansible-galaxy install -p roles geerlingguy.java
 
-#### To contribute
+Example Playbook
+----------------
+For a complete example with this role check out my buildserver:
+git clone https://github.com/bbaassssiiee/buildserver.git
 
-- Create a feature branch from the change.
-- Make changes to feature branch only.
-- Test your feature branch.
-- Merge back to master.
+Example of how to use this role:
+
+    - hosts: servers
+      roles:
+         - { role: bbaassssiiee.artifactory }
+
+License
+-------
+
+BSD,MIT
+
+Author Information
+------------------
+Bas Meijer @bbaassssiiee
