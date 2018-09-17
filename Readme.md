@@ -13,6 +13,7 @@ docker pull thinkingmonster/centos7-ansible
 - This docker image is already having git and ansible installed to it.Once image is pulled start  container using the same.<br>
 
 ```
+
 docker run -t -p 8085:8080 -i thinkingmonster/centos7-ansible  /bin/bash
 ```
 
