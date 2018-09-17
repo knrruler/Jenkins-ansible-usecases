@@ -2,3 +2,6 @@
 54.90.244.181
 
 34.227.93.169
+
+ansible_user=user
+ansible_pass=infodrive
