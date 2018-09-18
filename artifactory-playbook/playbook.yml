@@ -15,4 +15,4 @@
 
   roles:
     - role: base_postgres
-    - role: artifactory
+    - role: artifactory-playbook
