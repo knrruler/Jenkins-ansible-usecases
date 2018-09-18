@@ -1,4 +1,4 @@
 ---
 
-- src: lnxlalith.base_java8
-- src: lnxlalith.base_postgres
+#- src: lnxlalith.base_java8
+#- src: lnxlalith.base_postgres
