@@ -3,7 +3,7 @@
 # defaults file for base_artifactory
 artifactory_version: "5.2.1"
 artifactory_license: oss
-artifactory_username: "artifactory"
+artifactory_username: "artifactoryuser"
 artifactory_password: "password"
 
 # You must specify a directory outside of {{ artifactory_home }} if you use derby storage
