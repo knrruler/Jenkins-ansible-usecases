@@ -14,5 +14,5 @@
     - base_postgres_pass: test_password
 
   roles:
-    - role: lnxlalith.base_postgres
+    - role: lnxlalith/base_postgres
     - role: artifactory
