@@ -15,4 +15,5 @@
 
   roles:
     - role: base_postgres
+    - role: base_java8
     - role: artifactory-playbook
