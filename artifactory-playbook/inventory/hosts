@@ -1,3 +1,3 @@
 [artifactory]
-54.174.16.24 ansible_connection=ssh ansible_user=user ansible_ssh_pass=infodrive ansible_become_user=root ansible_become_pass=infodrive
+54.146.250.159 ansible_connection=ssh ansible_user=user ansible_ssh_pass=infodrive ansible_become_user=root ansible_become_pass=infodrive
 
