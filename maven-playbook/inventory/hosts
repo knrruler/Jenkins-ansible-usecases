@@ -1,2 +1,2 @@
 [maven]
-40.114.33.0 ansible_connection=ssh ansible_user=azureuser ansible_ssh_pass=Azureuser@1 ansible_become_user=root ansible_become_pass=Azureuser@1
+40.114.33.0 ansible_connection=ssh ansible_user=azureuser ansible_ssh_pass=Azureuser@1 ansible_become_method=sudo ansible_become_user=root ansible_become_pass=Azureuser@1
