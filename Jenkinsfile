@@ -10,7 +10,7 @@ pipeline {
                 //sh 'ansible-playbook artifactory-playbook/requirements.yml'
                 //sh 'ansible-galaxy install -r artifactory-playbook/requirements.yml'
                 //sh 'ansible-playbook -i artifactory-playbook/inventory artifactory-playbook/playbook.yml'
-                sh 'ansible-playbook -i maven-playbook/inventory maven-playbook/playbook.yml'
+                sh 'ansible-playbook -i maven-playbook/inventory maven-playbook/maven.yml'
             }
         }
         stage('Test') {
