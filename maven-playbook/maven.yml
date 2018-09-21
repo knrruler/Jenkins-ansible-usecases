@@ -1,4 +1,4 @@
 ---
-- hosts: localhost
+- hosts: maven
   roles:
     - { role: maven }
