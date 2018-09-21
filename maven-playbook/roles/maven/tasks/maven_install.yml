@@ -25,7 +25,8 @@
   
 #Create local repository
 - name: Create local repository
-  file: path=/scratch/repository state=directory mode="u=rwx,g=rwx,o=rwx"
+  #file: path=/scratch/repository state=directory mode="u=rwx,g=rwx,o=rwx"
+  file: path=/opt/repository state=directory mode="u=rwx,g=rwx,o=rwx"
   
 #Places settings file
 - name: Creates setting.xml file 
