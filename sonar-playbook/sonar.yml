@@ -1,4 +1,4 @@
 ---
-- hosts: localhost
+- hosts: sonar
   roles:
     - { role: sonar }
