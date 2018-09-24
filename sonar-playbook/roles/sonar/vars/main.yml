@@ -26,4 +26,4 @@ sonar_plugins:
  # - 'http://dist.sonarsource.com/oss/org/codehaus/sonar-plugins/java/sonar-findbugs-plugin/3.1/sonar-findbugs-plugin-3.1.jar'
 
 # Reporting
- # - 'http://dist.sonarsource.com/oss/org/codehaus/sonar-plugins/sonar-build-breaker-plugin/1.1/sonar-build-breaker-plugin-1.1.jar'
+  - 'http://dist.sonarsource.com/oss/org/codehaus/sonar-plugins/sonar-build-breaker-plugin/1.1/sonar-build-breaker-plugin-1.1.jar'
