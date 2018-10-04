@@ -1,2 +1,2 @@
 [artifactory]
-54.146.250.159 ansible_connection=ssh ansible_user=user ansible_ssh_pass=infodrive ansible_become_user=root ansible_become_pass=infodrive
+40.87.8.237 ansible_connection=ssh ansible_user=azureuser ansible_ssh_pass=Azureuser@1 ansible_become_user=root ansible_become_pass=Azureuser@1
