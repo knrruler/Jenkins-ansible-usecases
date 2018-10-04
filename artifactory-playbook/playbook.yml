@@ -14,6 +14,6 @@
     - base_postgres_pass: test_password
 
   roles:
-    - role: base_postgres
     - role: base_java8
+    - role: base_postgres
     - role: artifactory-playbook
