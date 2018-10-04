@@ -14,4 +14,6 @@
     - base_postgres_pass: postgres
 
   roles:
+    - role: base_java8
+    - role: base_postgres
     - role: artifactory-playbook
