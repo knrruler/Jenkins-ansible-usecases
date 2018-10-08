@@ -13,6 +13,6 @@
     - base_postgres_user: test_db_user
     - base_postgres_pass: test_password
   roles:
-    - role: base_java8
-    - role: base_postgres
-    - role: artifactory-playbook
+     - role: base_java8
+     - role: base_postgres
+     - role: artifactory-playbook
