@@ -2,17 +2,14 @@
 - hosts: artifactory
   become: yes
   become_method: sudo
-
-
   vars_files:
     - defaults/main.yml
     - vars/main.yml
-
   vars:
     - artifactory_database: postgres
     - base_postgres_user: test_db_user
     - base_postgres_pass: test_password
   roles:
-#     - base_java8
+     - base_java8
      - base_postgres
      - artifactory-playbook
