@@ -1,5 +1,5 @@
 ---
 
 - src: https://github.com/lnxlalith/base_java8
-- src: https://github.com/lnxlalith/base_postgres
-  name: base_postgres
+#- src: https://github.com/lnxlalith/base_postgres
+ # name: base_postgres
