@@ -12,8 +12,7 @@ pipeline {
                 //sh 'ansible-playbook -i artifactory-playbook/inventory artifactory-playbook/playbook.yml'
                 //sh 'ansible-playbook -i maven-playbook/inventory maven-playbook/maven.yml'
                 //sh 'ansible-playbook -i sonar-playbook/inventory sonar-playbook/sonar.yml'
-                sh 'ansible-playbook -i tomcat-playbook/inventory tomcat-playbook/tomcat.yml -k'
-                // -e ansible_python_interpreter=/usr/bin/python2.7
+                sh 'ansible-playbook -i tomcat-playbook/inventory tomcat-playbook/tomcat.yml -k -e ansible_python_interpreter=/usr/bin/python2.7'
             }
         }
         stage('Test') {
