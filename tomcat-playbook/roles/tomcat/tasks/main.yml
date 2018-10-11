@@ -32,9 +32,8 @@
 - name: changing  access permissions for  tomcat
   shell: chmod -R 777 /opt/apache-tomcat-7.0.61/
 
-#- name: Start Tomcat
-#  service: name=tomcat state=started enabled=yes
+- name: Start Tomcat
+  service: name=tomcat state=started enabled=yes
   
-
-#- name: wait for tomcat to start
-#  wait_for: port={{http_port}}
+- name: wait for tomcat to start
+  wait_for: port={{http_port}}
