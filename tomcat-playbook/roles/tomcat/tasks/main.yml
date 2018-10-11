@@ -12,8 +12,8 @@
 - name: Symlink install directory
   file: src=/opt/apache-tomcat-7.0.61 path=/usr/local/tomcat state=link
   
-- name: create jenkin user
-  command: adduser jenkins
+#- name: create jenkin user
+ # command: adduser jenkins
  
 - name: allow jenkin user to access tomcat
   file: path=/opt/apache-tomcat-7.0.61/work  owner=jenkins group=jenkins mode=755 recurse=yes
