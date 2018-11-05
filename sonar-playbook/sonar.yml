@@ -1,4 +1,5 @@
 ---
-- hosts: sonar
+- hosts: all
+#- hosts: sonar
   roles:
     - { role: sonar }
